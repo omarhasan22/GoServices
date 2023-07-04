@@ -1,0 +1,98 @@
+﻿
+<!-- <div id="header" class="fixed-top d-flex  header-transparent"  [ngClass]="{ 'bg-light': account }" > -->
+
+    <!-- main nav -->
+      <!-- <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center justify-content-between">
+      
+
+             <div class="logo">
+                <h1><a routerLink="/">GoServices</a></h1> 
+                 Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+              </div> 
+
+
+    
+    <nav  class="navbar navbar-expand navbar-dark bg-dark px-3" *ngIf="account">
+        <div class="navbar-nav">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Home</a>
+            <a routerLink="/profile" routerLinkActive="active" class="nav-item nav-link">Profile</a>
+            <a *ngIf="account.role === Role.Admin" routerLink="/admin" routerLinkActive="active" class="nav-item nav-link">Admin</a>
+            <button (click)="logout()" class="btn btn-link nav-item nav-link">Logout</button>
+        </div>
+    </nav>
+   
+
+
+
+
+</div>
+ </header>  -->
+
+<!-- 
+<div >
+
+
+ <nav *ngIf="account"   [ngClass]="{ 'bg-light': account }" style="  background-color: #092342 !important; opacity: 0.99  ; height: 4em; " class="navbar navbar-expand-sm navbar-light fixed-top " id="neubar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../assets/img/Plumbing_Services.png" height="60" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto " style="color: #092342 !important;">
+          <li class="nav-item">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a  routerLink="/profile" routerLinkActive="active" class="nav-item nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a *ngIf="account.role === Role.Admin" routerLink="/admin" routerLinkActive="active" class="nav-item nav-link">Admin</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+              <li><a class="dropdown-item" href="#">About Us</a></li>
+              <li><a class="dropdown-item" href="#">Contact us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- </div> -->
+
+    <!-- subnav router outlet -->
+    <!-- <router-outlet name="subnav"></router-outlet> -->
+<app-header></app-header>
+
+    <!-- global alert -->
+    <alert></alert>
+
+    <!-- main router outlet -->
+    <router-outlet></router-outlet>

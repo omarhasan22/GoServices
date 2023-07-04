@@ -1,0 +1,92 @@
+<div style="margin-left: -6em; margin-right: -6em;">
+<nav class="navbar navbar-light bg-light d-flex justify-content-center">
+
+    <!-- <form class="form-inline" [formGroup]="form" (ngSubmit)="onSubmit()">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" formControlName="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+    <div class="main-search-input-wrap">
+       
+     
+      <div class="main-search-input fl-wrap">
+        <form class="form-inline" [formGroup]="form" (ngSubmit)="onSubmit()">
+                                          <div class="main-search-input-item">
+                                           
+                                            <input formControlName="search" type="search"  aria-label="search" placeholder="Search Providers...">
+                                          
+                                          </div>
+                                          
+                                          <button type="submit" class="main-search-button">Search</button>
+                                        </form>
+                                        </div>
+                                      
+  
+                                      </div>
+  
+  
+  </nav>
+<!-- 
+  <link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ Include the above in your HEAD tag 
+
+<section class="wrapper" id="services" >
+
+  <div class="container">
+    <div class="row" ngForm>
+      <div style="padding: 3em;" class="col-md-4" *ngFor="let account of accounts">
+        <a [routerLink]="['/Profile', account.id]" >
+        <div class="card profile-card-3" >
+          <div class="background-block">
+            <img
+              src='../../../assets/img/PATC/{{account.career}}.png'
+              alt="profile-sample1"
+              class="background"
+            />
+          </div>
+          <div class="profile-thumb-block">
+            <img
+              src="https://randomuser.me/api/portraits/men/41.jpg"
+              alt="profile-image"
+              class="profile"
+            />
+          </div>
+          <div class="card-content">
+            <h2> {{account.firstName}} {{account.lastName}} <small>{{account.career}}</small></h2>
+            <div>disc</div>
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   -->
+
+
+<div class="container">
+    <div class="row text-center">
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5" *ngFor="let account of accounts" >
+          <a [routerLink]="['/Profile', account.id]" class="text-decoration-none" > 
+          <div style="background-color: rgb(243, 243, 243) !important" class="bg-white rounded shadow-sm py-5 px-4"><img src="https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">{{account.firstName}} {{account.lastName}}</h5><span class="small text-uppercase text-muted">{{account.career}}</span>
+                <p>{{account.phone}}</p>
+              </div>
+            </a>
+        </div><!-- End -->
+
+       
+
+    </div>
+</div>
+
+</div>

@@ -1,0 +1,70 @@
+﻿<div *ngIf="role != Role.Provider">
+
+<h1>My Profile</h1>
+<p *ngIf="account">
+    <strong>Name: </strong> {{account.title}} {{account.firstName}} {{account.lastName}}<br />
+    <strong>Email: </strong> {{account.email}}
+</p>
+<p><a  routerLink="update">Update Profile</a></p>
+</div>
+
+
+<div *ngIf="role === Role.Provider">
+<section *ngIf="account">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container bootstrap snippets bootdey">
+<div class="row">
+  <div class="profile-nav col-md-3">
+      <div class="panel">
+          <div class="user-heading round">
+              <a href="#">
+                  <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
+              </a>
+              <h1>{{account.firstName}}</h1>
+              <p>{{account.email}}</p>
+          </div>
+
+          <ul class="nav nav-pills nav-stacked">
+             
+              <li><a routerLink="activity"> <i class="fa fa-calendar"></i> Recent Activity <span class="label label-warning pull-right r-activity">9</span></a></li>
+            </ul>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a routerLink="update"> <i class="fa fa-edit"></i> Edit profile</a></li>
+          </ul>
+      </div>
+  </div>
+  <div class="profile-info col-md-9">
+     
+      <div class="panel" style="background-color: rgb(241, 240, 240);">
+          <div class="bio-graph-heading">  </div>
+          <div class="panel-body bio-graph-info">
+              
+              <div class="row" *ngIf="account" style="padding: 2em;">
+                  <div class="bio-row">
+                      <p class="fs-5"><span style="color: brown;">First Name </span>: {{account.firstName}}</p>
+                  </div>
+                  <div class="bio-row">
+                      <p class="fs-5"><span style="color: brown;">Last Name </span>: {{account.lastName}}</p>
+                  </div>
+                  
+                  
+                  <div class="bio-row">
+                      <p class="fs-5"><span style="color: brown;" >Career </span>: {{account.career}}</p>
+                  </div>
+                  <div class="bio-row">
+                      <p class="fs-5"><span style="color: brown;">Email </span>: {{account.email}}</p>
+                  </div>
+                  <div class="bio-row">
+                      <p class="fs-5"><span style="color: brown;">Mobile </span>: {{account.phone}}</p>
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+     
+
+  </div>
+</div>
+</div>
+</section>
+</div>

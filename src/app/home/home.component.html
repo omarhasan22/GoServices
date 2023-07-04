@@ -1,0 +1,129 @@
+<!-- ======= Header ======= -->
+<!-- <router-outlet></router-outlet> -->
+
+ <!-- <app-header></app-header>  -->
+
+  <!-- ======= Hero Section ======= -->
+<section id="hero" style="height: 100vh;" >
+  <div class="hero-container">
+    <h1>GoServices </h1>
+    <h1>Welcome {{account?.firstName}}!</h1>
+    <h2> Your satisfaction is our guarantee, we strive to exceed your expectations. </h2>
+    
+  </div>
+</section>
+<!-- End Hero -->
+
+<main id="main" >
+
+
+  <!-- ======= Services Section ======= -->
+  <section style="background-color: #ebf1f2;" id="services" class="services section-bg">
+    <div class="container">
+
+      <div style="padding-bottom: 0;" class="section-title">
+        <h2 >Services</h2>
+      </div>
+
+      
+
+        <app-sev></app-sev>
+       
+      
+
+    </div>
+  </section>
+  <!-- End Services Section -->
+
+ 
+  
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio" style="    padding-bottom: 0px">
+     <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+       
+      </div>
+
+      
+
+      <app-filter-prof style="background-color: #ebf1f2; margin: 1em;"></app-filter-prof>
+
+
+
+    </div> 
+  
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Team Section ======= -->
+  <!-- <section id="team" class="team section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2> Our Best Service Providers </h2>
+        
+      </div>
+
+      <div class="row">
+
+        <app-team [teamMembers]="members"></app-team>  
+
+      </div>
+
+    </div>
+  </section>End Team Section
+
+   -->
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact section-bg">
+    <div class="container">
+
+      <div class="section-title" >
+        <h2>Contact</h2>
+        
+      </div>
+    </div>
+  
+    <div class="container">
+      <div class="row mt-5 justify-content-center">
+
+        <div class="col-lg-10">
+
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-4 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Dam w Farz <br>Tripoli</p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@goServices.com<br> info@goServices.com </p>
+              </div>
+
+              <div class="col-lg-4 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+961 77 477 744</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <app-contact></app-contact>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

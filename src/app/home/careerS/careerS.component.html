@@ -1,0 +1,59 @@
+<!-- <section id="services" class="services section-bg">
+    <div class="container">
+
+        <div class="section-title">
+          <h2>{{career}}</h2>
+        </div>
+  
+        <div class="row" >
+  
+            <div class="card" style="width: 18rem;" *ngFor="let account of accounts">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">{{account.firstName + account.lastName}}</h5>
+                  <p class="card-text"></p>
+                  <a  class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+         
+        </div>
+  
+      </div>
+</section> -->
+
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<section id="services" class="services section-bg">
+
+  <div style="margin-top: 4em;" class="section-title">
+    <h2>{{career}}</h2>
+  </div>
+
+  <div class="container">
+    <div class="row" ngForm>
+      <div class="container">
+        <div class="row text-center">
+    
+            <!-- Team item -->
+            
+            <div class="col-xl-3 col-sm-6 mb-5" *ngFor="let account of accounts" >
+                <div style="background-color: rgb(243, 243, 243) !important" class="bg-white rounded shadow-sm py-5 px-4"><img src="https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                    <h5 class="mb-0"> <a [routerLink]="['/Profile', account.id]"  class="text-decoration-none">{{account.firstName}} {{account.lastName}} </a></h5><span class="small text-uppercase text-muted">{{account.career}}</span>
+                    
+                  </div>
+            </div><!-- End -->
+        
+           
+    
+        </div>
+    </div>
+    </div>
+  </div>
+</section>

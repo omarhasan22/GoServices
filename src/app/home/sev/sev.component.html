@@ -1,0 +1,52 @@
+<!-- <div *ngFor="let account of accounts"
+ class="col-lg-2 col-md-6 icon-box">
+    <div class="icon"><i class="bi bi-briefcase"></i></div>
+    <h4 class="title"><a href="">{{account}}</a></h4>
+    <p class="description">Number of careers</p>
+  </div> -->
+  <!-- <div class="row">
+    <div class="col-lg-3 col-md-6" *ngFor="let account of accounts">
+      <div class="icon-box">
+        <div class="icon"><i class="bi bi-briefcase"></i></div>
+
+        <h4 class="title"><a 
+          [routerLink]="['/Providers', account]"
+          >{{account}}</a></h4>
+       
+        <p class="description">Number of careers</p>
+      </div>
+    </div>
+  </div> -->
+
+  
+  <section class="wrapper">
+    <div class="container">
+     
+    <div class="row" >
+<div *ngFor="let account of accounts" class="col-sm-3 col-md-2 col-lg-3 mb-4 ">
+  <div class="card text-white card-has-bg click-col" style="background-image:url('../../../assets/img/{{account}}.png');">
+           <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+          <div class="card-img-overlay d-flex flex-column">
+           <div class="card-body">
+              
+              <h4 class="card-title mt-0 "><a class="text-decoration-none text-center" style="color: #bacde3;" [routerLink]="['/Providers', account]">{{account}}</a></h4>
+              <!-- <small  class="card-meta mb-2"> number of careers: {{careersN}}</small> -->
+            </div>
+            <!-- <div class="card-footer">
+              <div class="media">
+     <div class="media-body">
+      <h6 class="my-0 text-white d-block">Oz Coruhlu</h6>
+       <small>Director of UI/UX</small>
+    </div> 
+  </div> 
+            </div> -->
+          </div>
+        </div></div>
+        
+  </div>
+    
+  </div>
+  </section>
+  
+
+  
