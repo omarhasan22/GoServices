@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'https://perfumeserver.onrender.com'
+    apiUrl: 'https://goservicesserver.onrender.com'
 };
