@@ -35,8 +35,8 @@
     
             <!-- Team item -->
             
-            <div class="col-xl-3 col-sm-6 mb-5" *ngFor="let account of accounts" >
-                <div [routerLink]="['/Profile', account.id]" style="background-color: rgb(243, 243, 243) !important" class="bg-white rounded shadow-sm py-5 px-4"><img src="https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <div class="col-xl-3 col-sm-6 mb-5 clicked" *ngFor="let account of accounts" [routerLink]="['/Profile', account.id]" >
+                <div   style="background-color: rgb(243, 243, 243) !important" class="bg-white rounded shadow-sm py-5 px-4"><img src="https://t4.ftcdn.net/jpg/02/15/84/43/360_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                     <h5 class="mb-0"> <a   class="text-decoration-none">{{account.firstName}} {{account.lastName}} </a></h5><span class="small text-uppercase text-muted">{{account.career}}</span>
                     
                   </div>
