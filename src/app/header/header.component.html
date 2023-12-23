@@ -2,15 +2,17 @@
 <div  >
 
 
-  <nav    [ngClass]="{ 'bg-light': account }" style="  background-color: #05162b !important; opacity: 0.99  ; height: 4em; " class="navbar navbar-expand-sm navbar-light fixed-top " id="neubar">
-     <div class="container">
+  <nav    [ngClass]="{ 'bg-light': account }" style="  background-color: #05162b !important; opacity: 0.99  ; height: 4em; " class="fixed-top navbar navbar-expand-lg navbar-light bg-light " id="neubar">
+     <div class="container-fluid">
+
+    
        <a class="navbar-brand" href="#"><img src="assets/img/logo.jpg" height="60" /></a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
    
        <div class=" collapse navbar-collapse" id="navbarNavDropdown" style="color: azure;">
-         <ul class="navbar-nav ms-auto ">
+        <div class="navbar-nav me-auto mb-2 mb-lg-0 ">
            <li class="nav-item">
              <a   routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Home</a>
            </li>
@@ -24,7 +26,7 @@
             <a  style="background: none; border: none;" (click)="logout()" class="nav-item nav-link"  routerLinkActive="active">Logout</a>
             
            </li>
-         </ul>
+          </div>
        </div>
      </div>
    </nav>
