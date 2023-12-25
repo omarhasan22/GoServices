@@ -2,3 +2,7 @@
 color: white !important;
 
 }
+
+.nav-item.active{
+    color: rgb(60, 145, 219);
+}
